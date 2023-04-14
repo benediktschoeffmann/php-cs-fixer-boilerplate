@@ -34,4 +34,4 @@ jobs:
         run: "composer install --ansi --no-interaction --no-progress"
 
       - name: "Run friendsofphp/php-cs-fixer"
-        run: "vendor/bin/php-cs-fixer fix --ansi --config=../../.php-cs-fixer.php --diff --dry-run --verbose"
+        run: "vendor/bin/php-cs-fixer fix --ansi --config=.php-cs-fixer.php --diff --dry-run --verbose"
