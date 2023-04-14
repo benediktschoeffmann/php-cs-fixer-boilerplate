@@ -13,7 +13,7 @@ $finder = PhpCsFixer\Finder::create()
 $config = new PhpCsFixer\Config();
 
 $config
-    ->setFinder($finder);
+    ->setFinder($finder)
     ->setRules([]);
 
 return $config;
