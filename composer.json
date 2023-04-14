@@ -1,21 +1,23 @@
 {
     "name": "ben-byron/php-cs-fixer-boilerplate",
-    "autoload": {
-        "psr-4": {
-            "BenByron\\PhpCsFixerBoilerplate\\": "src/"
-        }
-    },
+    "description": "PHP-CS-Fixer boilerplate to integrate into your projects. ",
     "authors": [
         {
             "name": "Benedikt Schöffmann",
             "email": "benedikt.schoeffmann@gmail.com"
         }
     ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BenByron\\PhpCsFixerBoilerplate\\": "src/"
+        }
+    },
     "require": {
         "friendsofphp/php-cs-fixer": "^3.16"
     },
     "scripts": {
-        "dry": "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --diff --dry-run --verbose",
-        "csfix": "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --diff --verbose" 
+        "csdry": "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --diff --dry-run --verbose",
+        "csfix": "@vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --diff --verbose" 
     }
 }
